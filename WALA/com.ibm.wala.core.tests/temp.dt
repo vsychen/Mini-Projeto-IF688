@@ -1,0 +1,33 @@
+digraph "DirectedGraph" {
+graph [concentrate = true];center=true;fontsize=6;node [ color=blue,shape="box"fontsize=6,fontcolor=black,fontname=Arial];edge [ color=black,fontsize=6,fontcolor=black,fontname=Arial]; 
+   "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, soma([D)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, subtracao([D)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, multiplicacao([D)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, divisao([D)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, pow([DI)[D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, show([D)Ljava/lang/String; > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, binomial(DDI)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, pow(DI)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, combination(II)D > Context: Everywhere" [ ]
+   "Node: < Application, Lteste, factorial(I)D > Context: Everywhere" [ ]
+ "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" -> "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, soma([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, subtracao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, multiplicacao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, divisao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, pow([DI)[D > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, show([D)Ljava/lang/String; > Context: Everywhere" 
+ "Node: < Application, Lteste, main([Ljava/lang/String;)V > Context: Everywhere" -> "Node: < Application, Lteste, binomial(DDI)D > Context: Everywhere" 
+ "Node: < Application, Lteste, pow([DI)[D > Context: Everywhere" -> "Node: < Application, Lteste, pow(DI)D > Context: Everywhere" 
+ "Node: < Application, Lteste, binomial(DDI)D > Context: Everywhere" -> "Node: < Application, Lteste, multiplicacao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, binomial(DDI)D > Context: Everywhere" -> "Node: < Application, Lteste, pow([DI)[D > Context: Everywhere" 
+ "Node: < Application, Lteste, binomial(DDI)D > Context: Everywhere" -> "Node: < Application, Lteste, combination(II)D > Context: Everywhere" 
+ "Node: < Application, Lteste, pow(DI)D > Context: Everywhere" -> "Node: < Application, Lteste, multiplicacao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, combination(II)D > Context: Everywhere" -> "Node: < Application, Lteste, multiplicacao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, combination(II)D > Context: Everywhere" -> "Node: < Application, Lteste, divisao([D)D > Context: Everywhere" 
+ "Node: < Application, Lteste, combination(II)D > Context: Everywhere" -> "Node: < Application, Lteste, factorial(I)D > Context: Everywhere" 
+ "Node: < Application, Lteste, factorial(I)D > Context: Everywhere" -> "Node: < Application, Lteste, multiplicacao([D)D > Context: Everywhere" 
+
+}
